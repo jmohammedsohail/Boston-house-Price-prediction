@@ -27,7 +27,7 @@ st.sidebar.header('Specify Input Parameters')
 float(X.CRIM.min())
 X.CRIM.max()
 def user_input_features():
-    CRIM = st.sidebar.slider('CRIM', float(X.CRIM.min()), float(X.CRIM.max()), X.CRIM.mean())
+    CRIM = st.sidebar.slider('CRIM', (X.CRIM.min()), (X.CRIM.max()), X.CRIM.mean())
     ZN = st.sidebar.slider('ZN',float(X.ZN.min()), float(X.ZN.max()), X.ZN.mean())
     INDUS = st.sidebar.slider('INDUS', float(X.INDUS.min()), float(X.INDUS.max()), X.INDUS.mean())
     CHAS = st.sidebar.slider('CHAS', float(X.CHAS.min()), float(X.CHAS.max()), X.CHAS.mean())
