@@ -28,7 +28,7 @@ float(X.CRIM.min())
 X.CRIM.max()
 def user_input_features():
     CRIM = st.sidebar.slider('CRIM', min_value=float(X.CRIM.min()), max_value=float(X.CRIM.max()),step=float(X.CRIM.mean()) )
-    ZN = st.sidebar.slider('ZN',float(X.ZN.min()), float(X.ZN.max()), X.ZN.mean())
+    ZN = st.sidebar.slider('ZN',float(X.ZN.min()), float(X.ZN.max()), float(X.ZN.mean()))
     INDUS = st.sidebar.slider('INDUS', float(X.INDUS.min()), float(X.INDUS.max()), X.INDUS.mean())
     CHAS = st.sidebar.slider('CHAS', float(X.CHAS.min()), float(X.CHAS.max()), X.CHAS.mean())
     NOX = st.sidebar.slider('NOX', float(X.NOX.min()), float(X.NOX.max()), X.NOX.mean())
